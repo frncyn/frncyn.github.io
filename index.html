@@ -3,31 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Profile</title>
+    <title>Miel's Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for Social Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Navigation -->
+<!-- Navigation -->
+<nav class="navbar">
+    <a href="#hero" class="logo">Miel</a>
+    <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#projects">Activities</a></li>
+        <li><a href="#links">Links</a></li>
+        <li><a href="#contact" class="nav-btn">Let's Talk</a></li>
+    </ul>
+</nav>
 
-    <header class="hero-section">
-    <div class="header-content">
-        <div class="image-container">
-            <img src="assets/MIEL.jpg" alt="Profile Picture of Miel Francine">
+    <!-- Hero Section -->
+    <header class="hero-section" id="hero">
+        <div class="hero-content">
+            <div class="hero-img-container">
+                <img src="assets/MIEL.jpg" alt="Profile Picture of Miel Francine">
+            </div>
+            <div class="hero-text">
+                <span class="hero-intro">Hello!</span>
+                <h1>I am <span class="highlight">Miel Francine Palla</span></h1>
+                <p class="hero-desc">Passionate about learning</p>
+                <div class="hero-buttons">
+                    <div class="social-icons">
+                        <a href="https://github.com/frncyn" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com/in/frncyn" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://facebook.com/in/frncyn" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="mailto:miel.mp26@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="text-content">
-            <p class="welcome-text">WELCOME!</p>
-            <h1>Hi, I'm Miel Francine</h1>
-            <p class="subtitle">BSIT 3-1</p>
+        <div class="hero-bg-decor"></div>
+    </header>
+
+    <!-- About Me Section -->
+    <section class="about-section" id="about">
+        <div class="about-card">
+            <div class="about-img">
+                <img src="assets/miel2.jpg" alt="Miel Francine">
+            </div>
+            <div class="about-text">
+                <h2>About Me</h2>
+                <p>Hi! I’m <strong>Miel Francine M. Palla</strong>, a BSIT 3-1 student at Polytechnic University of the Philippines, Sto. Tomas Campus. I love learning how websites and applications are built— from design and code to real-world deployment. My passion lies in experimenting with layouts, color schemes, and user interfaces. I'm eager to enhance my skills, explore new technologies, and contribute to innovative digital solutions.</p>
+                <div class="about-stats">
+            </div>
         </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects-section" id="projects">
+        <h2>WebDev Activities</h2>
+        <div class="projects-cards">
+            <div class="project-card">
+    <img src="assets/project4.png" alt="Project 1">
+    <div class="project-info">
+        <h3>Gadget Showcase</h3>
+        <p>Activity 4: Modern web design for showcasing the known gadgets. <br><span class="project-tags">Web Design</span></p>
+        <a href="https://frncyn.github.io/frncynm.github.io/" class="project-link" target="_blank" rel="noopener">
+            <i class="fas fa-external-link-alt"></i>
+        </a>
     </div>
-</header>
+</div>
+            <div class="project-card">
+                <img src="assets/project5.jpg" alt="Project 2">
+                <div class="project-info">
+                    <h3>Places Showcase</h3>
+                    <p>Activity 5: Interactive dashboard for exploring various locations.<br><span class="project-tags">Web Design</span></p>
+                    <a href="https://frncyn.github.io/frncynm.github.io/" class="project-link" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <main class="main-content">
-        <section class="about-me">
-            <h2>About Me</h2>
-            <p>Hi! I’m Miel Francine M. Palla, a proud student of the Polytechnic University of the Philippines, Sto. Tomas Campus, currently taking up a degree in Information Technology. I have a deep passion for learning how websites and applications are built, from the design phase to coding and implementation. I enjoy experimenting with layouts, color schemes, and user interfaces, as well as understanding how programming languages bring digital ideas to life. As I continue my journey as an IT student, I look forward to enhancing my skills, exploring new technologies, and eventually contributing to innovative digital solutions that can make a positive impact on people’s lives.</p>
-        </section>
-    </main>
+    <!-- Links Section -->
+    <section class="links-section" id="links">
+        <h2>My Other Sites</h2>
+        <div class="links-cards">
+            <a href="https://www.linkedin.com/in/miel-francine-palla-0907a2390/" target="_blank" class="link-card">
+                <img src="assets/linkedin-logo.jpg" alt="LinkedIn">
+                <span>LinkedIn</span>
+                <p>My professional profile</p>
+            </a>
+            <a href="https://github.com/frncyn" target="_blank" class="link-card">
+                <img src="assets/github-logo.jpg" alt="GitHub">
+                <span>GitHub</span>
+                <p>My code projects and contributions</p>
+            </a>
+            <a href="https://www.facebook.com/miel.palla.5" target="_blank" class="link-card">
+                <img src="assets/facebook-logo.jpg" alt="Facebook">
+                <span>Facebook</span>
+                <p>My social profile</p>
+            </a>
+        </div>
+    </section>
 
+    <!-- Contact Section (Simple) -->
+<section class="contact-section" id="contact">
+    <h2>Contact Me</h2>
+    <p><b>Feel free to reach out!</b></p>
+    <div class="contact-details">
+        <p><strong>Phone:</strong> (+63) 999 567 9369</p>
+        <p><strong>Address:</strong> Sto. Tomas, Batangas</p>
+    </div>
+</section>
+
+    <footer>
+        <p>&copy; 2025 Miel Francine. All rights reserved.</p>
+    </footer>
 </body>
 </html>
