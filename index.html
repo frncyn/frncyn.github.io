@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,19 +10,22 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <!-- Navigation -->
-<!-- Navigation -->
-<nav class="navbar">
-    <a href="#hero" class="logo">Miel</a>
-    <ul>
-        <li><a href="#hero">Home</a></li>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#projects">Activities</a></li>
-        <li><a href="#links">Links</a></li>
-        <li><a href="#contact" class="nav-btn">Let's Talk</a></li>
-    </ul>
-</nav>
+    <nav class="navbar">
+        <a href="#hero" class="logo">Miel</a>
+        <button class="nav-toggle" aria-label="Open navigation">
+            <span class="hamburger"></span>
+        </button>
+        <ul class="nav-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#activities">Activities</a></li>
+            <li><a href="#links">Links</a></li>
+            <li><a href="#contact" class="nav-btn">Let's Talk</a></li>
+        </ul>
+    </nav>
 
     <!-- Hero Section -->
     <header class="hero-section" id="hero">
@@ -54,10 +58,14 @@
             </div>
             <div class="about-text">
                 <h2>About Me</h2>
-                <p>Hi! I’m <strong>Miel Francine M. Palla</strong>, a BSIT 3-1 student at Polytechnic University of the Philippines, Sto. Tomas Campus. I love learning how websites and applications are built— from design and code to real-world deployment. My passion lies in experimenting with layouts, color schemes, and user interfaces. I'm eager to enhance my skills, explore new technologies, and contribute to innovative digital solutions.</p>
+                <p>Hi! I’m <strong>Miel Francine M. Palla</strong>, a BSIT 3-1 student at Polytechnic University of the
+                    Philippines, Sto. Tomas Campus. I love learning how websites and applications are built— from design
+                    and code to real-world deployment. My passion lies in experimenting with layouts, color schemes, and
+                    user interfaces. I'm eager to enhance my skills, explore new technologies, and contribute to
+                    innovative digital solutions.</p>
                 <div class="about-stats">
+                </div>
             </div>
-        </div>
     </section>
 
     <!-- Projects Section -->
@@ -65,21 +73,25 @@
         <h2>WebDev Activities</h2>
         <div class="projects-cards">
             <div class="project-card">
-    <img src="assets/project4.png" alt="Project 1">
-    <div class="project-info">
-        <h3>Gadget Showcase</h3>
-        <p>Activity 4: Modern web design for showcasing the known gadgets. <br><span class="project-tags">Web Design</span></p>
-        <a href="https://frncyn.github.io/frncynm.github.io/" class="project-link" target="_blank" rel="noopener">
-            <i class="fas fa-external-link-alt"></i>
-        </a>
-    </div>
-</div>
+                <img src="assets/project4.png" alt="Project 1">
+                <div class="project-info">
+                    <h3>Gadget Showcase</h3>
+                    <p>Activity 4: Modern web design for showcasing the known gadgets. <br><span
+                            class="project-tags">Web Design</span></p>
+                    <a href="https://frncyn.github.io/frncynm.github.io/" class="project-link" target="_blank"
+                        rel="noopener">
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+            </div>
             <div class="project-card">
                 <img src="assets/project5.jpg" alt="Project 2">
                 <div class="project-info">
                     <h3>Places Showcase</h3>
-                    <p>Activity 5: Interactive dashboard for exploring various locations.<br><span class="project-tags">Web Design</span></p>
-                    <a href="https://frncyn.github.io/frncynm.github.io/" class="project-link" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i></a>
+                    <p>Activity 5: Interactive dashboard for exploring various locations.<br><span
+                            class="project-tags">Web Design</span></p>
+                    <a href="https://frncyn.github.io/frncynm.github.io/" class="project-link" target="_blank"
+                        rel="noopener"><i class="fas fa-external-link-alt"></i></a>
                 </div>
             </div>
         </div>
@@ -108,17 +120,28 @@
     </section>
 
     <!-- Contact Section (Simple) -->
-<section class="contact-section" id="contact">
-    <h2>Contact Me</h2>
-    <p><b>Feel free to reach out!</b></p>
-    <div class="contact-details">
-        <p><strong>Phone:</strong> (+63) 999 567 9369</p>
-        <p><strong>Address:</strong> Sto. Tomas, Batangas</p>
-    </div>
-</section>
+    <section class="contact-section" id="contact">
+        <h2>Contact Me</h2>
+        <p><b>Feel free to reach out!</b></p>
+        <div class="contact-details">
+            <p><strong>Phone:</strong> (+63) 999 567 9369</p>
+            <p><strong>Address:</strong> Sto. Tomas, Batangas</p>
+        </div>
+    </section>
 
     <footer>
         <p>&copy; 2025 Miel Francine. All rights reserved.</p>
     </footer>
+
+    <script>
+        const navToggle = document.querySelector('.nav-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        navToggle.addEventListener('click', function () {
+            navLinks.classList.toggle('open');
+            navToggle.classList.toggle('open');
+        });
+    </script>
 </body>
+
 </html>
