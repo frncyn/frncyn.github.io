@@ -1,156 +1,233 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Miel's Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- Font Awesome for Social Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <a href="#hero" class="logo">Miel</a>
-        <button class="nav-toggle" aria-label="Open navigation">
-            <span class="hamburger"></span>
-        </button>
-        <ul class="nav-links">
-            <li><a href="#hero">Home</a></li>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#projects">Activities</a></li>
-            <li><a href="#links">Links</a></li>
-            <li><a href="#contact" class="nav-btn">Let's Talk</a></li>
-        </ul>
+<body class="bg-pink-light text-pink-dark">
+
+    <!-- NAVBAR (Bootstrap) -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-pink navbar-fixed-top shadow-sm sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-pink-strong" href="#hero">Miel</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Activities</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#links">Links</a></li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="btn btn-pink-cta text-white fw-semibold" href="#contact">Let's Talk</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
 
-    <!-- Hero Section -->
-    <header class="hero-section" id="hero">
-        <div class="hero-content">
-            <div class="hero-img-container">
-                <img src="assets/MIEL.jpg" alt="Profile Picture of Miel Francine">
-            </div>
-            <div class="hero-text">
-                <span class="hero-intro">Hello!</span>
-                <h1>I am <span class="highlight">Miel Francine Palla</span></h1>
-                <p class="hero-desc">Passionate about learning</p>
-                <div class="hero-buttons">
-                    <div class="social-icons">
-                        <a href="https://github.com/frncyn" target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="https://linkedin.com/in/frncyn" target="_blank"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://facebook.com/in/frncyn" target="_blank"><i class="fab fa-facebook"></i></a>
+    <!-- HERO -->
+    <header id="hero" class="py-5">
+        <div class="container">
+            <div class="row align-items-center gx-5">
+                <div class="col-md-4 text-center">
+                    <div class="mx-auto hero-img-container rounded-circle overflow-hidden shadow-lg">
+                        <img src="assets/MIEL.jpg" alt="Profile Picture of Miel Francine"
+                            class="img-fluid rounded-circle">
+                    </div>
+                </div>
+
+                <div class="col-md-8">
+                    <span class="d-block hero-intro text-pink-strong fw-semibold mb-2">Hello!</span>
+                    <h1 class="display-6 fw-bold mb-3">I am <span class="highlight">Miel Francine Palla</span></h1>
+                    <p class="lead mb-4 hero-desc">BSIT 3-1</p>
+
+                    <div class="d-flex gap-3 align-items-center">
+                        <div class="social-icons d-flex gap-2">
+                            <a class="btn btn-pink-square text-white" href="https://github.com/frncyn" target="_blank"
+                                rel="noopener"><i class="fab fa-github"></i></a>
+                            <a class="btn btn-pink-square text-white" href="https://linkedin.com/in/frncyn"
+                                target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
+                            <a class="btn btn-pink-square text-white" href="https://facebook.com/in/frncyn"
+                                target="_blank" rel="noopener"><i class="fab fa-facebook"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="hero-bg-decor"></div>
     </header>
 
-    <!-- About Me Section -->
-    <section class="about-section" id="about">
-        <div class="about-card">
-            <div class="about-img">
-                <img src="assets/miel2.jpg" alt="Miel Francine">
-            </div>
-            <div class="about-text">
-                <h2>About Me</h2>
-                <p>Hi! I’m <strong>Miel Francine M. Palla</strong>, a BSIT 3-1 student at Polytechnic University of the
-                    Philippines, Sto. Tomas Campus. I love learning how websites and applications are built— from design
-                    and code to real-world deployment. My passion lies in experimenting with layouts, color schemes, and
-                    user interfaces. I'm eager to enhance my skills, explore new technologies, and contribute to
-                    innovative digital solutions.</p>
-                <div class="about-stats">
+    <!-- ABOUT -->
+    <section id="about" class="py-5 bg-soft-pink">
+        <div class="container">
+            <div class="card about-card border-0 shadow-sm">
+                <div class="row g-0 align-items-center">
+                    <div class="col-lg-3 text-center p-4">
+                        <div class="about-img rounded-3 overflow-hidden shadow-sm mx-auto"
+                            style="width:180px; height:180px;">
+                            <img src="assets/miel2.jpg" alt="Miel Francine"
+                                class="img-fluid h-100 w-100 object-fit-cover">
+                        </div>
+                    </div>
+                    <div class="col-lg-9 p-4">
+                        <h2 class="text-pink-strong fw-bold mb-3">About Me</h2>
+                        <p class="mb-3 text-pink-dark">Hi! I’m <strong>Miel Francine M. Palla</strong>, a BSIT 3-1
+                            student at Polytechnic
+                            University of the Philippines, Sto. Tomas Campus. I love learning how websites and
+                            applications are built—
+                            from design and code to real-world deployment. My passion lies in experimenting with
+                            layouts, color schemes,
+                            and user interfaces. I'm eager to enhance my skills, explore new technologies, and
+                            contribute to innovative
+                            digital solutions.</p>
+                        <div class="d-flex gap-4 about-stats">
+                            <!-- place stats here if needed -->
+                        </div>
+                    </div>
                 </div>
             </div>
+        </div>
     </section>
 
-    <!-- Projects Section -->
-    <section class="projects-section" id="projects">
-        <h2>WebDev Activities</h2>
-        <div class="projects-cards">
-            <div class="project-card">
-                <img src="assets/project4.png" alt="Project 4">
-                <div class="project-info">
-                    <h3>Nintendo | Gadget Showcase</h3>
-                    <p>Activity 4: Modern web design for showcasing the known gadgets. <br><span
-                            class="project-tags">Web Design</span></p>
-                    <a href="https://frncyn.github.io/frncynm.github.io/" class="project-link" target="_blank"
+    <!-- PROJECTS -->
+    <section id="projects" class="py-5">
+        <div class="container">
+            <h2 class="text-center text-pink-strong fw-bold mb-4">WebDev Activities</h2>
+
+            <div class="row g-4 justify-content-center projects-cards">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card project-card h-100 shadow-sm border-0">
+                        <img src="assets/project4.png" class="card-img-top object-fit-cover" alt="Project 4"
+                            style="height:170px;">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title text-pink-dark">Nintendo | Gadget Showcase</h5>
+                            <p class="card-text text-pink-dark mb-3">Activity 4: Modern web design for showcasing the
+                                known gadgets.
+                                <br><span class="project-tags text-pink-strong">Web Design</span>
+                            </p>
+                            <div class="mt-auto text-end">
+                                <a href="https://frncyn.github.io/frncynm.github.io/" target="_blank" rel="noopener"
+                                    class="btn btn-white-circle"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card project-card h-100 shadow-sm border-0">
+                        <img src="assets/project5.png" class="card-img-top object-fit-cover" alt="Project 5"
+                            style="height:170px;">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title text-pink-dark">Italy | Country Showcase</h5>
+                            <p class="card-text text-pink-dark mb-3">Activity 5: Interactive dashboard for exploring
+                                various locations.
+                                <br><span class="project-tags text-pink-strong">Web Design</span>
+                            </p>
+                            <div class="mt-auto text-end">
+                                <a href="https://frncyn.github.io/frnwebdevpj5/" target="_blank" rel="noopener"
+                                    class="btn btn-white-circle"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card project-card h-100 shadow-sm border-0">
+                        <img src="assets/project6.png" class="card-img-top object-fit-cover" alt="Project 6"
+                            style="height:170px;">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title text-pink-dark">Coming Soon</h5>
+                            <p class="card-text text-pink-dark mb-3">eyy<br><span
+                                    class="project-tags text-pink-strong">Web Design</span></p>
+                            <div class="mt-auto text-end">
+                                <a href="#" class="btn btn-white-circle" aria-disabled="true"><i
+                                        class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- LINKS -->
+    <section id="links" class="py-5 bg-soft-pink">
+        <div class="container">
+            <h2 class="text-center text-pink-strong fw-bold mb-4">My Other Sites</h2>
+
+            <div class="row g-4 links-cards justify-content-center">
+                <div class="col-sm-6 col-md-4">
+                    <a class="card link-card h-100 text-decoration-none text-center border-0 shadow-sm"
+                        href="https://www.linkedin.com/in/miel-francine-palla-0907a2390/" target="_blank"
                         rel="noopener">
-                        <i class="fas fa-external-link-alt"></i>
+                        <div class="card-body d-flex flex-column align-items-center">
+                            <img src="assets/linkedin-logo.jpg" alt="LinkedIn" class="mb-3"
+                                style="width:44px;height:44px;object-fit:cover;border-radius:8px;background:#fff;">
+                            <span class="fw-bold text-pink-strong">LinkedIn</span>
+                            <p class="mb-0 text-pink-dark">My professional profile</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-sm-6 col-md-4">
+                    <a class="card link-card h-100 text-decoration-none text-center border-0 shadow-sm"
+                        href="https://github.com/frncyn" target="_blank" rel="noopener">
+                        <div class="card-body d-flex flex-column align-items-center">
+                            <img src="assets/github-logo.jpg" alt="GitHub" class="mb-3"
+                                style="width:44px;height:44px;object-fit:cover;border-radius:8px;background:#fff;">
+                            <span class="fw-bold text-pink-strong">GitHub</span>
+                            <p class="mb-0 text-pink-dark">My code projects and contributions</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-sm-6 col-md-4">
+                    <a class="card link-card h-100 text-decoration-none text-center border-0 shadow-sm"
+                        href="https://www.facebook.com/miel.palla.5" target="_blank" rel="noopener">
+                        <div class="card-body d-flex flex-column align-items-center">
+                            <img src="assets/facebook-logo.jpg" alt="Facebook" class="mb-3"
+                                style="width:44px;height:44px;object-fit:cover;border-radius:8px;background:#fff;">
+                            <span class="fw-bold text-pink-strong">Facebook</span>
+                            <p class="mb-0 text-pink-dark">My social profile</p>
+                        </div>
                     </a>
                 </div>
             </div>
-            <div class="project-card">
-                <img src="assets/project5.png" alt="Project 5">
-                <div class="project-info">
-                    <h3>Italy | Country Showcase</h3>
-                    <p>Activity 5: Interactive dashboard for exploring various locations.<br><span
-                            class="project-tags">Web Design</span></p>
-                    <a href="https://frncyn.github.io/frnwebdevpj5/" class="project-link" target="_blank"
-                        rel="noopener"><i class="fas fa-external-link-alt"></i></a>
-                </div>
-            </div>
-            <div class="project-card">
-                <img src="assets/project6.png" alt="Project 6">
-                <div class="project-info">
-                    <h3>Coming Soon</h3>
-                    <p>eyy<br><span
-                            class="project-tags">Web Design</span></p>
-                    <a href="coming soon eme" class="project-link" target="_blank"
-                        rel="noopener"><i class="fas fa-external-link-alt"></i></a>
-                </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="py-5">
+        <div class="container text-center">
+            <h2 class="text-pink-strong fw-bold mb-3">Contact Me</h2>
+            <p class="text-pink-dark mb-3"><strong>Feel free to reach out!</strong></p>
+            <div class="contact-details">
+                <p class="mb-1 text-pink-dark"><strong>Phone:</strong> (+63) 999 567 9369</p>
+                <p class="mb-0 text-pink-dark"><strong>Address:</strong> Sto. Tomas, Batangas</p>
             </div>
         </div>
     </section>
 
-    <!-- Links Section -->
-    <section class="links-section" id="links">
-        <h2>My Other Sites</h2>
-        <div class="links-cards">
-            <a href="https://www.linkedin.com/in/miel-francine-palla-0907a2390/" target="_blank" class="link-card">
-                <img src="assets/linkedin-logo.jpg" alt="LinkedIn">
-                <span>LinkedIn</span>
-                <p>My professional profile</p>
-            </a>
-            <a href="https://github.com/frncyn" target="_blank" class="link-card">
-                <img src="assets/github-logo.jpg" alt="GitHub">
-                <span>GitHub</span>
-                <p>My code projects and contributions</p>
-            </a>
-            <a href="https://www.facebook.com/miel.palla.5" target="_blank" class="link-card">
-                <img src="assets/facebook-logo.jpg" alt="Facebook">
-                <span>Facebook</span>
-                <p>My social profile</p>
-            </a>
+    <!-- FOOTER -->
+    <footer class="py-3 bg-pink text-center">
+        <div class="container">
+            <p class="mb-0 text-pink-dark">&copy; 2025 Miel Francine. All rights reserved.</p>
         </div>
-    </section>
-
-    <!-- Contact Section (Simple) -->
-    <section class="contact-section" id="contact">
-        <h2>Contact Me</h2>
-        <p><b>Feel free to reach out!</b></p>
-        <div class="contact-details">
-            <p><strong>Phone:</strong> (+63) 999 567 9369</p>
-            <p><strong>Address:</strong> Sto. Tomas, Batangas</p>
-        </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 Miel Francine. All rights reserved.</p>
     </footer>
 
-    <script>
-        const navToggle = document.querySelector('.nav-toggle');
-        const navLinks = document.querySelector('.nav-links');
-
-        navToggle.addEventListener('click', function () {
-            navLinks.classList.toggle('open');
-            navToggle.classList.toggle('open');
-        });
-    </script>
+    <!-- Bootstrap JS bundle (Popper included) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
